@@ -1,10 +1,22 @@
-{"intents": [
+{
+  "intents": [
         {"tag": "greeting",
-                "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+                "patterns": ["Hi", "How are you", "Hello", "Good day"],
                 "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
                 "context_set": ""
                },
-               {"tag": "goodbye",
+               {
+                 "tag": "website",
+                 "patterns": ["Can you please give me the link of the website"],
+                 "responses": ["https://www.rngpit.ac.in"]
+               },               
+               {
+                "tag": "visvesmruti",
+                "patterns": ["Can you please give me the link of the visvesmruti website"],
+                "responses": ["https://www.visvesmruti.fetr.ac.in"]
+               },               
+               {
+                "tag": "goodbye",
                 "patterns": ["Bye", "See you later", "Goodbye"],
                 "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
                },
@@ -14,62 +26,68 @@
                },
                {"tag": "hours",
                 "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-                "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
-               },
-               {"tag": "mopeds",
-                "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-                "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+                "responses": ["We're open every day 10am-5pm", "Our hours are 10am-5pm every day"]
                },
                {"tag": "payments",
-                "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+                "patterns": ["How To Pay College Fees", "Can i pay my fees online", "Are you cash only?" ],
                 "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
                },
+               {
+                 "tag": "cfaculty",
+                 "patterns": ["Who is Head of the computer department","Who is Hod of the computer department","Who is Head of the computr department","Who is Hod of the cse department"],
+                 "responses": ["Dr. Madhavi B. Desai"]
+               },
+               {
+                 "tag": "cfaculty1",
+                 "patterns": ["how many faculties are there in computer department", "how many faculties are there in cse department"],
+                 "responses": ["There are 15 Faculties in Computer Science Department"]
+               },               
+               {
+                "tag": "mfaculty",
+                "patterns": ["how many faculties are there in mechanical department", "how many faculties are there in mech department"],
+                "responses": ["There are 15 Faculties in Mechanical Department"]
+              },              
+              {
+                "tag": "efaculty",
+                "patterns": ["how many faculties are there in electrical department", "how many faculties are there in ele department"],
+                "responses": ["There are 15 Faculties in Electrical Department"]
+              },              
+              {
+                "tag": "cifaculty",
+                "patterns": ["how many faculties are there in civil department"],
+                "responses": ["There are 15 Faculties in Civil Department"]
+              },              
+              {
+                "tag": "chfaculty",
+                "patterns": ["how many faculties are there in chemical department"],
+                "responses": ["There are 15 Faculties in Chemical Department"]
+              },
                {"tag": "opentoday",
-                "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-                "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
-               },
-               {"tag": "rental",
-                "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-                "responses": ["Are you looking to rent today or later this week?"],
-                "context_set": "rentalday"
-               },
-               {"tag": "today",
-                "patterns": ["today"],
-                "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-                "context_filter": "rentalday"
+                "patterns": ["What are the working hours of the college","Are you open today?", "When do you open today?", "What are your hours today?"],
+                "responses": ["We're open every day except sunday from 10am-5pm", "College Working hours are 10am-5pm"]
                },
                {"tag": "result",
                 "patterns": ["where is my result?", "How to find my result?", "when result will be announce","how can I check my result?" ],
-                "responses": ["result will be announced soon", "please visit your department bulletin", "www.google.com"]
-               },       
-               {
-                 "tag": "faculty",
-                 "patterns": ["which faculty are going to teach me?", "How to check my faculty details?", "what is my faculty's email id?", "when i can meet my faculty?"],
-                 "responses": ["click on this pdf"]
-               },
-       
+                "responses": ["For all the results updates visit https://gturesults.in"]
+               },      
                {"tag": "campus",
                 "patterns": ["how many building are there in campus?", "where is my department in the campus?","where is the principal office in the campus?","where is the information desk on my campus?"],
                 "responses": ["from the entrance first information desk followed by principal office with total 5 buildings computer, IT, mechanical, civil, and electrical respectively"]
-               },
-       
+               },       
                {
                  "tag": "parking",
                  "patterns": ["give me the parking details", "can student park their car or bike in the parking?", "parking is available in my college?", "parking is free for everyone?"],
                  "responses": ["there are total 4 parking slots available for free who is associated with this institute"]
-               },
-       
+               },       
                {
                  "tag": "requirement",
                  "patterns": ["what are the requirement to get admit in this institute?", "minimum percentage requirement to study here", "is there any entrance test requirement to get admit?"],
                  "responses": ["here is the checklist to get admit:- \n 1)minimum 80% marks in 12th grade \n 2) 80+ marks in JEE \n please note that this information is based on last year data it may vary this year"]
-               },
-       
+               },       
                {
                  "tag": "achievements",
                  "patterns": ["our college achievements in sports ", "job achievements by our students "],
                  "responses": ["for more details click here to this link \n www.svmit.ac.in"]
-               }
-       
+               }       
    ]
 }
