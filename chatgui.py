@@ -77,21 +77,17 @@ base.title("Hello")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
-ChatLog = Text(base, bd=0, bg="black", height="8", width="50", font="Arial",)
+ChatLog = Text(base, bd=0, bg="lightblue", height="8", width="50", font="FiraCode",)
 ChatLog.config(state=DISABLED)
 
 scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
 ChatLog['yscrollcommand'] = scrollbar.set
-
 SendButton = Button(base, font=("JetBrains Mono",12,'bold'), text="Send", width="12", height=5,
                     bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
-                    command= send )
-                    
-EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="Arial")
-
+                    command= send )                    
+EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="FiraCode")
 scrollbar.place(x=376,y=6, height=386)
-ChatLog.place(x=6,y=6, height=386, width=370)
-EntryBox.place(x=128, y=401, height=90, width=265)
-SendButton.place(x=6, y=401, height=90)
-
+ChatLog.place(x=6,y=6, height=406, width=370)
+EntryBox.place(x=6, y=401, height=40, width=205)
+SendButton.place(x=128, y=401, height=40)
 base.mainloop()

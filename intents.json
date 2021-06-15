@@ -2,7 +2,7 @@
   "intents": [
         {"tag": "greeting",
                 "patterns": ["Hi", "How are you", "Hello", "Good day"],
-                "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+                "responses": ["Hello, thanks for visiting", "Hi there, how can I help?"],
                 "context_set": ""
                },
                {
@@ -24,28 +24,34 @@
                 "patterns": ["Thanks", "Thank you", "That's helpful"],
                 "responses": ["Happy to help!", "Any time!", "My pleasure"]
                },
-               {"tag": "hours",
-                "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-                "responses": ["We're open every day 10am-5pm", "Our hours are 10am-5pm every day"]
-               },
                {"tag": "payments",
-                "patterns": ["How To Pay College Fees", "Can i pay my fees online", "Are you cash only?" ],
-                "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+                "patterns": ["How To Pay College Fees", "Can i pay my fees online","online fees","regarding fees"],
+                "responses": ["You can pay college fees by cheque at the admin office or you can also pay fees online","For Paying fees online headover to https://www.rngpit.ac.in and click on pay fees on upper right corner"]
+               },
+               {
+                 "tag": "departments",
+                 "patterns": ["how many departments are there", "how many departments are in this college"],
+                 "responses": ["There are 6 Departments in our institute \n 1)Computer Science Department\n 2)Mechanical Department \n 3)Chemical Department \n 4)Science & Humalities Department \n 5)Civil Department \n 6)Electrical Department"]
+               },
+               {
+                 "tag":"sfaculty",
+                 "patterns": ["how many faculties are there in science and humanities department", "science & huminities", "science & humanities", "science and huminities", "science and humanities"],                 
+                 "responses": ["There are 7 Faculties in Chemical Department"]
                },
                {
                  "tag": "cfaculty",
-                 "patterns": ["Who is Head of the computer department","Who is Hod of the computer department","Who is Head of the computr department","Who is Hod of the cse department"],
+                 "patterns": ["Who is Head of the computer department","Who is Hod of the computer department","Who is Head of the cse department","Who is Hod of the cse department"],
                  "responses": ["Dr. Madhavi B. Desai"]
                },
                {
                  "tag": "cfaculty1",
                  "patterns": ["how many faculties are there in computer department", "how many faculties are there in cse department"],
-                 "responses": ["There are 15 Faculties in Computer Science Department"]
+                 "responses": ["There are 11 Faculties in Computer Science Department"]
                },               
                {
                 "tag": "mfaculty",
                 "patterns": ["how many faculties are there in mechanical department", "how many faculties are there in mech department"],
-                "responses": ["There are 15 Faculties in Mechanical Department"]
+                "responses": ["There are 19 Faculties in Mechanical Department"]
               },              
               {
                 "tag": "efaculty",
@@ -55,18 +61,19 @@
               {
                 "tag": "cifaculty",
                 "patterns": ["how many faculties are there in civil department"],
-                "responses": ["There are 15 Faculties in Civil Department"]
+                "responses": ["There are 13 Faculties in Civil Department"]
               },              
               {
                 "tag": "chfaculty",
                 "patterns": ["how many faculties are there in chemical department"],
-                "responses": ["There are 15 Faculties in Chemical Department"]
+                "responses": ["There are 11 Faculties in Chemical Department"]
               },
                {"tag": "opentoday",
                 "patterns": ["What are the working hours of the college","Are you open today?", "When do you open today?", "What are your hours today?"],
                 "responses": ["We're open every day except sunday from 10am-5pm", "College Working hours are 10am-5pm"]
                },
-               {"tag": "result",
+               {
+                 "tag": "result",
                 "patterns": ["where is my result?", "How to find my result?", "when result will be announce","how can I check my result?" ],
                 "responses": ["For all the results updates visit https://gturesults.in"]
                },      
@@ -78,16 +85,11 @@
                  "tag": "parking",
                  "patterns": ["give me the parking details", "can student park their car or bike in the parking?", "parking is available in my college?", "parking is free for everyone?"],
                  "responses": ["there are total 4 parking slots available for free who is associated with this institute"]
-               },       
+              },       
                {
                  "tag": "requirement",
                  "patterns": ["what are the requirement to get admit in this institute?", "minimum percentage requirement to study here", "is there any entrance test requirement to get admit?"],
                  "responses": ["here is the checklist to get admit:- \n 1)minimum 80% marks in 12th grade \n 2) 80+ marks in JEE \n please note that this information is based on last year data it may vary this year"]
-               },       
-               {
-                 "tag": "achievements",
-                 "patterns": ["our college achievements in sports ", "job achievements by our students "],
-                 "responses": ["for more details click here to this link \n www.svmit.ac.in"]
-               }       
+               }
    ]
 }
