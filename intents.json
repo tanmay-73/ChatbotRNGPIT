@@ -25,12 +25,12 @@
                 "responses": ["Happy to help!", "Any time!", "My pleasure"]
                },
                {"tag": "payments",
-                "patterns": ["How To Pay College Fees", "Can i pay my fees online","online fees","regarding fees"],
+                "patterns": ["How To Pay College Fees", "Can i pay my fees online","online fees"],
                 "responses": ["You can pay college fees by cheque at the admin office or you can also pay fees online","For Paying fees online headover to https://www.rngpit.ac.in and click on pay fees on upper right corner"]
                },
                {
                  "tag": "departments",
-                 "patterns": ["how many departments are there", "how many departments are in this college"],
+                 "patterns": ["how many departments are there", "how many departments are there in this college"],
                  "responses": ["There are 6 Departments in our institute \n 1)Computer Science Department\n 2)Mechanical Department \n 3)Chemical Department \n 4)Science & Humalities Department \n 5)Civil Department \n 6)Electrical Department"]
                },
                {
